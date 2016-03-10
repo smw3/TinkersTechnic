@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import ttechnic.blocks.TTBlocks;
+import ttechnic.blocks.TTBlockHandler;
 import ttechnic.blocks.SimpleBlock;
 
 @Mod(modid = TTechnic.MODID, version = TTechnic.VERSION)
@@ -38,7 +38,7 @@ public class TTechnic {
 		};
 		
 		// Register blocks
-		TTBlocks.registerBlocks();
+		TTBlockHandler.registerBlocks();
 		
 		proxy.preInit();
 	}
